@@ -1,0 +1,27 @@
+l=list(map(str,input().split(",")))
+n=int(input())
+x1=0
+y1=0
+for i in l:
+    if(i=="RIGHT"):
+        if(x1+1<n):
+            x1+=1
+        else:
+            break
+    elif(i=="LEFT"):
+        if(x1-1>=-n):
+            break
+        else:
+            x1-=1
+    elif(i=="UP"):
+        if(y1+1<n):
+            y1+=1
+        else:
+            break
+    elif(i=='DOWN'):
+        if(y1-1>=-n):
+            break
+        else:
+            y1-=1
+    print(x1,y1)
+print(x1,y1)
