@@ -1,0 +1,20 @@
+n=int(input())
+l=list(map(int,input().split()))
+sums=0
+sumd=0
+for i in range(1,n+1):
+    if(i%2!=0):
+        if(l[0]>=l[len(l)-1]):
+            sums+=l[0]
+            l.remove(l[0])
+        else:
+            sums+=l[len(l)-1]
+            l.remove(l[len(l)-1])
+    else:
+        if(l[0]>=l[len(l)-1]):
+            sumd+=l[0]
+            l.remove(l[0])
+        else:
+            sumd+=l[len(l)-1]
+            l.remove(l[len(l)-1])
+print(sums,sumd)
