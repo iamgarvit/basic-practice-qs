@@ -1,0 +1,22 @@
+s1=input()
+s2=''
+x='.'
+y='-.'
+z='--'
+a='0'
+b='1'
+c='2'
+i=0
+while i<len(s1):
+    if(s1[i:i+2]==y):
+        s2=s2+b
+        i+=2
+    elif(s1[i:i+2]==z):
+        s2=s2+c
+        i+=2
+    elif(s1[i]==x):
+        s2=s2+a
+        i+=1
+    else:
+        i+=1
+print(s2)
