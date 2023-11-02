@@ -1,0 +1,9 @@
+n,k=map(int,input().split())
+if(n%2==0):
+    a=n/2
+else:
+    a=(n+1)/2
+if(k<=a):
+    print(int((2*k)-1))
+else:
+    print(int((2*(k-a))))

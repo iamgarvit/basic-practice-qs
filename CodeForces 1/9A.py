@@ -1,0 +1,17 @@
+a,b=map(int,input().split())
+x=max(a,b)
+poss=7-x
+if(poss==0):
+    print('0/1')
+if(poss==1):
+    print('1/6')
+if(poss==2):
+    print('1/3')
+if(poss==3):
+    print('1/2')
+if(poss==4):
+    print('2/3')
+if(poss==5):
+    print('5/6')
+if(poss==6):
+    print('1/1')
