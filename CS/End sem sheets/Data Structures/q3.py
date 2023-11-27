@@ -1,11 +1,10 @@
-#ambigous
-l=list(map(int,input().split()))
-n=int(input())
-def rotate_clockwise(l,n):
-    for i in range(len(l)-1):
-        if(i!=n-1 or i!=n-2):
-            l[i],l[i+1]=l[i+1],l[i]
-        if(n!=0 or n!=len(l)-1):
-            l[0],l[len(l)-1]=l[len(l)-1],l[0]
-    return l
-print(rotate_clockwise(l,n))
+l=list(map(int,input().split(",")))
+r=int(input())
+c=[]
+for i in l:
+    c.append(l)
+for i in range(len(l)):
+    z=i+r
+    z=z%(len(l))
+    c[z]=l[i]
+print(c)
