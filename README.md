@@ -1,2 +1,2 @@
 # basic-practice-qs
-Consists of all practice code, etc.
+Consists of all practice code, assignments, general algos, etc.
